@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hoja de Vida</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="barra-navegacion">
+            <div class="caja-navegacion">
+                <a class="marca" asp-controller="Home" asp-action="Index">Hoja de Vida</a>
+                <ul class="lista-navegacion">
+                    <li><a class="enlace" asp-controller="Home" asp-action="Perfil">Perfil</a></li>
+                    <li><a class="enlace" asp-controller="Home" asp-action="Estudios">Estudios</a></li>
+                    <li><a class="enlace" asp-controller="Home" asp-action="Experiencia">Experiencia</a></li>
+                    <li><a class="enlace" asp-controller="Home" asp-action="Habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="caja-principal">
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="pie">
+        <div class="caja-pie">
+            <span>&copy; 2025 - Hoja de Vida</span>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
