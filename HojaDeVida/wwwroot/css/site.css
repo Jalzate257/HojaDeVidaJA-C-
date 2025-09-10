@@ -16,13 +16,13 @@ body{
 /* === Títulos === */
 .titulo-centro {
     text-align: center;
-    color: #1a4d80;
+    color: #004a4d;
     font-size: 28px;
     margin-bottom: 20px;
 }
 
 .subtitulo {
-    color: #1a4d80;
+    color: #004a4d;
     font-size: 20px;
     margin-top: 20px;
     border-bottom: 2px solid #e0e0e0;
@@ -48,7 +48,7 @@ body{
 
 /* === Barra de navegación === */
 .barra-navegacion {
-    background: linear-gradient(90deg, #1a4d80, #145a96);
+    background: linear-gradient(90deg, #004a4d, #004a4d);
     padding: 12px;
 }
 
